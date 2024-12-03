@@ -6,8 +6,8 @@
 {% block content %}
     <h2>Welcome to My Django App</h2>
     <p>Click the button below to place an order.</p>
-    {% comment %}<form action="{% url 'order' %}" method="post">
+    <form method="post">
         {% csrf_token %}
-        <button type="submit">Place Order</button>
-    </form>{% endcomment %}
+        <button type="submit">Purchase!</button>
+    </form>
 {% endblock %}
